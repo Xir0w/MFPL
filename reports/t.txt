@@ -1,0 +1,9 @@
+TOKEN: T         LEXEME: t					TOKEN: T         LEXEME: t
+CONST -> t							CONST -> t
+EXPR -> CONST							EXPR -> CONST
+START -> EXPR							START -> EXPR
+
+---- Completed parsing ----					---- Completed parsing ----
+
+
+Value of the expression is: t					Value of the expression is: t

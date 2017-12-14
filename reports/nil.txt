@@ -1,0 +1,9 @@
+TOKEN: NIL       LEXEME: nil					TOKEN: NIL       LEXEME: nil
+CONST -> nil							CONST -> nil
+EXPR -> CONST							EXPR -> CONST
+START -> EXPR							START -> EXPR
+
+---- Completed parsing ----					---- Completed parsing ----
+
+
+Value of the expression is: nil					Value of the expression is: nil

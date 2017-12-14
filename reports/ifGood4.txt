@@ -1,0 +1,21 @@
+TOKEN: LPAREN    LEXEME: (					TOKEN: LPAREN    LEXEME: (
+TOKEN: IF        LEXEME: if					TOKEN: IF        LEXEME: if
+TOKEN: T         LEXEME: t					TOKEN: T         LEXEME: t
+CONST -> t							CONST -> t
+EXPR -> CONST							EXPR -> CONST
+TOKEN: INTCONST  LEXEME: 100					TOKEN: INTCONST  LEXEME: 100
+CONST -> INTCONST						CONST -> INTCONST
+EXPR -> CONST							EXPR -> CONST
+TOKEN: STRCONST  LEXEME: "false"				TOKEN: STRCONST  LEXEME: "false"
+CONST -> STRCONST						CONST -> STRCONST
+EXPR -> CONST							EXPR -> CONST
+IF_EXPR -> if EXPR EXPR EXPR					IF_EXPR -> if EXPR EXPR EXPR
+PARENTHESIZED_EXPR -> IF_EXPR					PARENTHESIZED_EXPR -> IF_EXPR
+TOKEN: RPAREN    LEXEME: )					TOKEN: RPAREN    LEXEME: )
+EXPR -> ( PARENTHESIZED_EXPR )					EXPR -> ( PARENTHESIZED_EXPR )
+START -> EXPR							START -> EXPR
+
+---- Completed parsing ----					---- Completed parsing ----
+
+
+Value of the expression is: 100					Value of the expression is: 100
